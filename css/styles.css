@@ -44,8 +44,7 @@ body {
 
 .jumbotron {
     position: relative;
-    min-height: 470px;
-    /* background: url(../img/hypno_session.jpg); */
+    min-height: 26em;
     background: url(https://source.unsplash.com/random/700x700/?project);
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +53,9 @@ body {
 }
 
 #jumbo-img {
-    margin: auto;
+    /* margin: auto; */
+    margin: 50px 0 0 20px;
+
     display: block;
 }
 
@@ -205,10 +206,11 @@ address {
 
 @media (max-width: 1199px) {
     .jumbotron {
-        min-height: 550px;
+        min-height: 30em;
     }
 
     #jumbo-img {
+        width: 100%;
         margin: 50px 0 0 20px;
     }
 }
@@ -217,7 +219,7 @@ address {
 
 @media (max-width: 991px) {
     .jumbotron {
-        min-height: 790px;
+        min-height: 47em;
     }
 
     #jumbo-img {
@@ -242,7 +244,7 @@ address {
     }
 
     .jumbotron {
-        min-height: 780px;
+        min-height: 50em;
     }
 }
 
@@ -250,6 +252,6 @@ address {
 
 @media (max-width: 528px) {
     .jumbotron {
-        min-height: 880px;
+        min-height: 55em;
     }
 }
