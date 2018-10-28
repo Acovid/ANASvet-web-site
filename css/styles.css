@@ -1,0 +1,255 @@
+f
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 63px 0px 0px 0px;
+}
+
+.card-header a {
+    color: hsl(31, 27%, 34%);
+}
+
+#links a,
+#address a,
+.card-header a {
+    text-decoration: none;
+}
+
+/* Navbar styles */
+
+#main-nav {
+    background: hsl(31, 27%, 34%);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+
+.nav-item:hover {
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Jumbotron styles */
+
+.jumbotron {
+    position: relative;
+    min-height: 470px;
+    /* background: url(../img/hypno_session.jpg); */
+    background: url(https://source.unsplash.com/random/700x700/?project);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#jumbo-img {
+    margin: auto;
+    display: block;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .fas {
+    color: #820e8d;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Row styles */
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 20px 0px 20px;
+    /* border-bottom: 1px ridge grey; */
+    /* min-height: 300px; */
+}
+
+/* Carousel styles */
+
+.carousel {
+    /* background: rgb(172, 172, 125); */
+    background: #d98fe8;
+}
+
+.carousel .carousel-item {
+    height: 250px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    /* z-index: 1; */
+    /* color: black; */
+}
+
+.carousel .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 250px;
+}
+
+#carousel-button {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+/* Buttons and links styles */
+
+.btn:hover,
+.navbar-brand:hover {
+    transform: scale(1.5);
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+
+.card-header h3:hover {
+    transform-origin: left;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.contact-link:hover {
+    transform-origin: left;
+    font-size: 130%;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    color: rgb(201, 209, 178);
+}
+
+/* Footers styles */
+
+footer {
+    background-color: hsl(31, 27%, 34%);
+    padding: 0px 0px 10px 0px;
+}
+
+.contact-link {
+    color: #d98fe8;
+}
+
+#footrow {
+    margin: 0px auto;
+}
+
+#signature {
+    font-size: 80%;
+    color: white;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: white;
+}
+
+/* Section styles */
+
+#project {
+    background: #8c7256;
+}
+
+#contact {
+    background-color: hsl(31, 27%, 34%);
+    color: white;
+}
+
+/* Card styles */
+
+.card-title {
+    color: white;
+    margin: 0px;
+}
+
+.card-block {
+    padding: 2px 2px 2px 15px;
+}
+
+/* Other styles */
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Different media sizes */
+
+/* For large devices or smaller */
+
+@media (max-width: 1199px) {
+    .jumbotron {
+        min-height: 550px;
+    }
+
+    #jumbo-img {
+        margin: 50px 0 0 20px;
+    }
+}
+
+/* For medium devices or smaller */
+
+@media (max-width: 991px) {
+    .jumbotron {
+        min-height: 790px;
+    }
+
+    #jumbo-img {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+/* For small devices and smaller */
+
+@media (max-width: 768px) {
+    body {
+        /* padding: 66px 0px 0px 0px; */
+    }
+
+    .mt-resp {
+        margin-top: 1.5rem;
+    }
+
+    * {
+        /* text-align: center; */
+    }
+
+    .jumbotron {
+        min-height: 780px;
+    }
+}
+
+/* For extra small devices and smaller */
+
+@media (max-width: 528px) {
+    .jumbotron {
+        min-height: 880px;
+    }
+}
