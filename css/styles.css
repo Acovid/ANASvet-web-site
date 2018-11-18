@@ -1,6 +1,4 @@
-f
 /* General styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +19,9 @@ body {
     text-decoration: none;
 }
 
-/* Navbar styles */
+/* End of general styles */
 
+/* Navbar styles */
 #main-nav {
     background: hsl(31, 27%, 34%);
 }
@@ -40,11 +39,12 @@ body {
     border-radius: 10px;
 }
 
-/* Jumbotron styles */
+/* End of navbar styles */
 
+/* Jumbotron styles */
 .jumbotron {
     position: relative;
-    min-height: 26em;
+    min-height: 32em;
     background: url(https://source.unsplash.com/random/700x700/?project);
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,8 @@ body {
 #jumbo-img {
     /* margin: auto; */
     margin: 50px 0 0 20px;
-
+    height: 15em;
+    width: 65em;
     display: block;
 }
 
@@ -75,22 +76,11 @@ body {
     border-radius: 5px;
 }
 
-/* Row styles */
+/* End of jumbotron style */
 
-.row-header {
-    margin: 0px auto;
-    padding: 0px 0px;
-}
 
-.row-content {
-    margin: 0px auto;
-    padding: 20px 0px 20px;
-    /* border-bottom: 1px ridge grey; */
-    /* min-height: 300px; */
-}
 
 /* Carousel styles */
-
 .carousel {
     /* background: rgb(172, 172, 125); */
     background: #d98fe8;
@@ -120,8 +110,24 @@ body {
     color: black;
 }
 
-/* Buttons and links styles */
+/* End of caroussel styles */
 
+/* Row styles */
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 20px 0px 20px;
+    /* border-bottom: 1px ridge grey; */
+    /* min-height: 300px; */
+}
+
+/* End of row styles */
+
+/* Buttons and links styles */
 .btn:hover,
 .navbar-brand:hover {
     transform: scale(1.5);
@@ -143,8 +149,9 @@ body {
     color: rgb(201, 209, 178);
 }
 
-/* Footers styles */
+/* End of button and links styles */
 
+/* Footers styles */
 footer {
     background-color: hsl(31, 27%, 34%);
     padding: 0px 0px 10px 0px;
@@ -169,8 +176,9 @@ address {
     color: white;
 }
 
-/* Section styles */
+/* End of footer styles */
 
+/* Section styles */
 #project {
     background: #8c7256;
 }
@@ -180,8 +188,9 @@ address {
     color: white;
 }
 
-/* Card styles */
+/* End of section styles */
 
+/* Card styles */
 .card-title {
     color: white;
     margin: 0px;
@@ -191,8 +200,9 @@ address {
     padding: 2px 2px 2px 15px;
 }
 
-/* Other styles */
+/* End of card styles */
 
+/* Other styles */
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -200,13 +210,21 @@ address {
     padding: 10px;
 }
 
-/* Different media sizes */
+/* End of other styles */
+
+/* 
+DIFFERENT MEDIA SIZES
+    XL: large desktops, 1200px and up 
+    L: desktops, 992 - 1199px 
+    M: tablets, 768 - 991px
+    S: landscape phones, 576 - 767px
+    XS: portrait phones, less than 576px 
+*/
 
 /* For large devices or smaller */
-
 @media (max-width: 1199px) {
     .jumbotron {
-        min-height: 30em;
+        min-height: 39em;
     }
 
     #jumbo-img {
@@ -215,11 +233,25 @@ address {
     }
 }
 
+/* For iPad Pro */
+@media (max-width: 1024) {
+    .jumbotron {
+        min-height: 100em;
+    }
+
+
+
+    /* #jumbo-img {
+        width: 100%;
+        margin: 50px 0 0 20px;
+    } */
+}
+
 /* For medium devices or smaller */
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .jumbotron {
-        min-height: 47em;
+        min-height: 50em;
     }
 
     #jumbo-img {
@@ -230,9 +262,10 @@ address {
 
 /* For small devices and smaller */
 
-@media (max-width: 768px) {
-    body {
-        /* padding: 66px 0px 0px 0px; */
+@media (max-width: 799px) {
+
+    .jumbotron {
+        min-height: 50em;
     }
 
     .mt-resp {
@@ -242,9 +275,16 @@ address {
     * {
         /* text-align: center; */
     }
+}
+
+@media (max-width: 768px) {
 
     .jumbotron {
-        min-height: 50em;
+        min-height: 60em;
+    }
+
+    .mt-resp {
+        margin-top: 1.5rem;
     }
 }
 
@@ -252,6 +292,63 @@ address {
 
 @media (max-width: 528px) {
     .jumbotron {
-        min-height: 55em;
+        min-height: 75em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
+/* For iPhone 6/7/8 Plus */
+
+@media (max-width: 414px) {
+    .jumbotron {
+        min-height: 65em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
+/* For iPhone 6/7/8 */
+
+@media (max-width: 375px) {
+    .jumbotron {
+        min-height: 74em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
+/* For Galaxy S5 */
+
+@media (max-width: 360px) {
+    .jumbotron {
+        min-height: 81em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
+/* For iPhone 5/SE */
+
+@media (max-width: 320px) {
+    .jumbotron {
+        min-height: 90em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
     }
 }
