@@ -44,7 +44,7 @@ body {
 /* Jumbotron styles */
 .jumbotron {
     position: relative;
-    min-height: 32em;
+    min-height: 33em;
     background: url(https://source.unsplash.com/random/700x700/?project);
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +280,7 @@ DIFFERENT MEDIA SIZES
 @media (max-width: 768px) {
 
     .jumbotron {
-        min-height: 60em;
+        min-height: 56em;
     }
 
     .mt-resp {
@@ -301,11 +301,22 @@ DIFFERENT MEDIA SIZES
     }
 }
 
+@media (max-width: 478px) {
+    .jumbotron {
+        min-height: 50em;
+    }
+
+    #jumbo-img {
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
 /* For iPhone 6/7/8 Plus */
 
 @media (max-width: 414px) {
     .jumbotron {
-        min-height: 65em;
+        min-height: 55em;
     }
 
     #jumbo-img {
